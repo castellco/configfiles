@@ -1,0 +1,121 @@
+{
+    "editor.inlineSuggest.enabled": true,
+    "editor.minimap.enabled": false,
+    "telemetry.telemetryLevel": "off",
+    "editor.wordWrap": "on",
+    "github.copilot.enable": {
+        "*": false,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "rmd": true,
+        "quarto": true,
+        "r": false
+    },
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "r.editor.formatOnType": false,
+    "r.rmarkdown.codeLensCommands": [
+        "r.runCurrentChunk",
+        "r.runAboveChunks",
+        "r.runCurrentChunk",
+        "r.runCurrentAndBelowChunks",
+        "r.runAllChunks"
+    ],
+    "r.editor.formatScope": false,
+    "files.associations": {
+        "*.rmd": "rmd"
+},
+"editor.formatOnType": true,
+"r.bracketedPaste": true,
+"editor.tabCompletion": "on",
+"r.session.levelOfObjectDetail": "Normal",
+"editor.tabCompletion": "on",
+"security.workspace.trust.untrustedFiles": "open",
+"dictCompletion.userDictionary": "C:/Users/gcorn/OneDrive/Documentos/Spanish.dic"
+,
+"dictCompletion.externalUserDictFiles": "C:/Users/gcorn/OneDrive/Documentos/Spanish.dic",
+"[markdown]": {
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "on",
+        "strings": "on"
+    }
+},
+"editor.fontSize": 17,
+"terminal.integrated.cursorBlinking": true,
+"terminal.integrated.defaultProfile.windows": "Command Prompt",
+"todo-tree.general.enableFileWatcher": true,
+"todo-tree.general.showActivityBarBadge": true,
+"todo-tree.general.statusBar": "tags",
+"todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
+"todo-tree.general.statusBarClickBehaviour": "cycle",
+"todo-tree.tree.expanded": true,
+"todo-tree.tree.showCountsInTree": true,
+"editor.renderWhitespace": "none",
+"editor.stickyScroll.enabled": true,
+"workbench.iconTheme": "vscode-icons",
+"r.liveShare.defaults.shareBrowser": true,
+"r.lsp.debug": true,
+"r.rmarkdown.knit.openOutputFile": true,
+"editor.lineDecorationsWidth": 0,
+"editor.glyphMargin": false,
+"ipynb.experimental.pasteImages.enabled": true,
+"jupyter.exportWithOutputEnabled": true,
+"window.commandCenter": true,
+"problems.defaultViewMode": "table",
+"editor.semanticHighlighting.enabled": false,
+"workbench.colorCustomizations": {
+    "editorError.foreground": "#ff000035",
+    "editorWarning.foreground": "#ffff007a",
+    "editorInfo.foreground": "#0033ff4b"
+},
+"external.commands": [
+    {
+        "name": "Rterminal",
+        "command": "C:\\Program Files\\R\\R-4.2.2\\bin\\x64\\R.exe",
+        "cwd": "$ProjectFileDir$"
+    }
+],
+"vsicons.dontShowNewVersionMessage": true,
+"settingsSync.ignoredSettings": [
+
+],
+"Notes.notesLocation": "c:\\Users\\Carolina\\Documents\\0cast\\notes",
+"Codegeex.Privacy": false,
+"jupyter.allowUnauthorizedRemoteConnection": true,
+"git.autofetch": true,
+"r.dependencyChecks": true,
+"r.editor.tabSize": 4,
+"r.interpreterPath": "C:\\Program Files\\R\\R-4.2.2\\bin\\x64\\Rterm.exe",
+"r.terminalPath": "C:\\Program Files\\R\\R-4.2.2\\bin\\x64\\Rterm.exe",
+"editor.multiCursorModifier": "ctrlCmd",
+"mssql.connections": [
+    {
+        "connectionString": "Server=tcp:mucss-sqlserver.database.windows.net,1433;Database=mucssdb;Uid=databaseuser;Pwd=Muc55sql!",
+        "database": "mucssdb",
+        "user": "databaseuser",
+        "server": "tcp:mucss-sqlserver.database.windows.net,1433",
+        "authenticationType": "Integrated",
+        "password": ""
+    }
+],
+"editor.largeFileOptimizations": false,
+"workbench.colorTheme": "Default Dark+ Experimental",
+"editor.lineNumbers": "off",
+"Codegeex.Survey": false,
+"git.enableSmartCommit": true,
+"git.confirmSync": false,
+"window.zoomLevel": -0.5,
+"quarto.mathjax.extensions": [
+    "amscd"
+],
+"workbench.statusBar.visible": false,
+"r.rterm.windows": "C:\\Users\\Carolina\\anaconda3\\Scripts\\radian.exe",
+"files.autoSave": "afterDelay",
+"editor.autoIndent": "brackets",
+"r.plot.useHttpgd": true,
+"r.plot.defaults.fullWindowMode": true,
+"terminal.integrated.tabs.title": "${workspaceFolder}",
+}
