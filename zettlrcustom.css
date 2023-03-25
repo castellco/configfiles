@@ -1,0 +1,71 @@
+/* Enter your custom CSS here */
+/* Dark manu bar*/
+body.win32 #menubar {
+  background-color: var(--grey-7);
+  color: var(--system-accent-color-contrast);
+}
+/* Less spaced icons */
+body.win32 .tree-item .item-icon, body.win32 .tree-item .toggle-icon {
+    display: inline-block;
+    width: 14px;
+}
+/* Larger lines in editor */
+#editor {
+  --side-margin: calc( 4vw - 2em ); 
+}
+
+#editor .CodeMirror {
+  margin-left: var(--side-margin);
+}
+
+#editor .CodeMirror-scroll {
+  padding-right: var(--side-margin);
+}
+
+/* Shorter ToC */
+body #sidebar h1 {
+    padding: 5px;
+    font-size: 13px;
+}
+html {
+    cursor: default;
+    font-size: var(--base-font-size, 11px);
+}
+body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {
+    background-color: white;
+    border: 2px solid #5a5a5a;
+    border-radius: 0px;
+    min-width: 10px;
+    padding: 4px 4px;
+}
+/* Cambiar color verde por el oro */
+body.dark #editor .CodeMirror .cm-zkn-tag, body.dark #editor .CodeMirror .cm-zkn-id, body.dark #editor .CodeMirror .cm-zkn-link, body.dark #editor .CodeMirror .cm-zkn-link-formatting {
+    color: var(--gold-selection-dark);
+}
+:root {
+    --system-accent-color: var(--gold-selection-dark);
+    --system-accent-color-contrast: var(--c-primary-contrast);
+}
+body.dark #editor .CodeMirror .cm-formatting-header-1, body.dark #editor .CodeMirror .cm-formatting-header-2, body.dark #editor .CodeMirror .cm-formatting-header-3, body.dark #editor .CodeMirror .cm-formatting-header-4, body.dark #editor .CodeMirror .cm-formatting-header-5, body.dark #editor .CodeMirror .cm-formatting-header-6, body.dark #editor .CodeMirror .cm-url {
+    color: var(--gold-selection-dark);
+}
+body.dark #editor .CodeMirror .cm-fenced-code.cm-atom {
+    color: var(--grey-3);
+}
+body.dark #editor .CodeMirror .cm-fenced-code.cm-string {
+    color: var(--grey-3);
+}
+body.dark #editor .CodeMirror .cm-formatting-list-ul, body.dark #editor .CodeMirror .cm-formatting-list-ol {
+    color: var(--gold-selection-dark);
+}
+body.dark #editor .CodeMirror .cma {
+    color: var(--gold-selection-dark);
+}
+body.dark #editor .CodeMirror .cm-fenced-code.cm-number {
+    color: var(--gold-selection-dark);
+}
+body #editor .CodeMirror .cm-hr {
+    color: var(--c-primary-contrast);
+    font-family: 'Inconsolata', Consolas, Menlo, monospace;
+    font-weight: bold;
+}
