@@ -60,7 +60,7 @@
         "when": "editorTextFocus && editorLangId == 'r'"
       },
       {
-        "key": "ctrl+shift+enter",
+        "key": "ctrl+enter",
         "command": "r.runSelection",
         "when": "editorTextFocus && editorLangId == 'rmd'"
       },
@@ -99,7 +99,7 @@
         "when": "editorTextFocus && !editorReadonly"
       },
       {
-        "key": "ctrl+f ctrl+t",
+        "key": "ctrl+alt+t",
         "command": "workbench.action.terminal.focus"
       },
       {
@@ -255,5 +255,26 @@
         "args": {
         "snippet": "```{r}\n$0\n```"
         }
+      },
+      {
+        "key": "ctrl+alt+o", 
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {"snippet": "options(\n  max.print=100,\n  vsc.use_httpgd=TRUE,\n  device='windows'\n)"}
+      },
+      {
+        "key": "ctrl+enter",
+        "command": "-codegeex.interactive-mode",
+        "when": "editorFocus && !editorReadonly"
+      },
+      {
+        "key": "ctrl+shift+s",
+        "command": "github.copilot.generate",
+        "when": "editorTextFocus && github.copilot.activated"
+      },
+      {
+        "key": "ctrl+enter",
+        "command": "-github.copilot.generate",
+        "when": "editorTextFocus && github.copilot.activated"
       }
 ]
