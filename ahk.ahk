@@ -6,16 +6,25 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 <^>!a:: run C:\Program Files\Anki\anki.exe
 Return
 
+<^>!b:: run C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Return
+
 <^>!d:: run C:\Users\Carolina\Desktop\DocFetcher-4096.lnk ; alt gr + d = docfetcher
 Return
 
 <^>!e:: run C:\Program Files\Everything\Everything.exe
 Return
 
+<^>!i:: run "C:\Users\Carolina\AppData\Local\Programs\Microsoft VS Code Insiders\Code - Insiders.exe"
+Return
+
 <^>!s:: run C:\Users\Carolina\AppData\Roaming\Spotify\spotify.exe
 Return
 
 <^>!o:: run C:\Users\Carolina\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Obsidian.lnk
+Return
+
+<^>!p:: run C:\Program Files\Microsoft Power BI Desktop\bin\PBIDesktop.exe
 Return
 
 <^>!r:: run C:\Users\Carolina\AppData\Roaming\NppToR\NppToR.exe ; alt + r = rstudio
@@ -44,33 +53,11 @@ Return
 <^>!7:: send {ASC 92}
 Return
 
-; R en todo lugar
-!-::Send {ASC 60}{ASC 45}
-^+m::Send {ASC 37}{ASC 62}{ASC 37}
-^!i::Send {ASC 96}{ASC 96}{ASC 96}
+; R everywhere
+;!-::Send {ASC 60}{ASC 45}
+;^+m::Send {ASC 37}{ASC 62}{ASC 37}
+;;^!i::Send {ASC 96}{ASC 96}{ASC 96}
 
-; R en Vscode
-
-; #IfWinActive ahk_exe Code.exe
-;    ^+m::SendInput |>
-; #IfWinActive
-
-#IfWinActive ahk_exe Code.exe
-    ^!i::Send ```{r}```
-#IfWinActive
-
-; #IfWinActive ahk_exe Code.exe
-;    !-::Send <-
-; #IfWinActive
-
-
-; Obsidian
-
-; #IfWinActive, ahk_exe Obsidian.exe
-; SetTitleMatchMode, 2
-; LButton::MButton
-; #IfWinActive
 
 ;; Backticks
-
-;;<^>!}::Send {ASC 96}{ASC 96}{ASC 96}
+<^>!}::Send {ASC 96}{ASC 96}{ASC 96}

@@ -1,0 +1,10 @@
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[user]
+	name = Carolina Cornejo Castellano
+	email = gissela.cornejo@pucp.pe
+[gui]
+	encoding = UTF-8

@@ -226,6 +226,16 @@
         "command": "-codegeex.new-completions"
       },
       {
+        "key": "ctrl+f",
+        "command": "actions.find",
+        "when": "editorFocus || editorIsOpen"
+      },
+      {
+        "key": "ctrl+f",
+        "command": "-actions.find",
+        "when": "editorFocus || editorIsOpen"
+      },
+      {
         "key": "ctrl+alt+i",
         "command": "quarto.insertCodeCell"
       },
@@ -263,17 +273,38 @@
         "when": "editorTextFocus && github.copilot.activated"
       },
       {
-        "key": "ctrl+f",
-        "command": "actions.find",
-        "when": "editorFocus || editorIsOpen"
-      },
-      {
         "key": "ctrl+enter",
         "command": "-github.copilot.generate",
         "when": "editorTextFocus && github.copilot.activated"
       },
       {
-        "key": "ctrl+shift+f",
-        "command": "betterSearch.search"
+        "key": "ctrl+alt+c",
+        "command": "github.copilot.generate",
+        "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
+      },
+      {
+        "key": "ctrl+enter",
+        "command": "-github.copilot.generate",
+        "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
+      },
+      {
+        "key": "ctrl+alt+enter",
+        "command": "notebook.cell.insertCodeCellBelow",
+        "when": "notebookCellListFocused && !inputFocus"
+      },
+      {
+        "key": "ctrl+enter",
+        "command": "-notebook.cell.insertCodeCellBelow",
+        "when": "notebookCellListFocused && !inputFocus"
+      },
+      {
+        "key": "ctrl+enter",
+        "command": "r.runSelectionRetainCursor",
+        "when": "editorTextFocus && editorLangId == 'r'"
+      },
+      {
+        "key": "alt+enter",
+        "command": "-r.runSelectionRetainCursor",
+        "when": "editorTextFocus && editorLangId == 'r'"
       }
 ]
