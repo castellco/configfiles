@@ -13,4 +13,8 @@ Rprofile.site descargarlo en "C:\Program Files\R\R-4.2.2\etc"
 ## Vscode
 The `keybindings` and the `settings` json files are from Vscode, updated 2023-02-05. Should be placed at `C:\Users\Carolina\AppData\Roaming\Code\User`.
 
+## Rstudio
+iplastic.rstheme reemplazarlo en `C:\Program Files\RStudio\resources\app\resources\themes`
+
+
 
