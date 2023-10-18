@@ -4,39 +4,39 @@
     {
         "key": "Ctrl+Shift+m",
         "command": "type",
-        "args": { "text": " %>% " },
+        "args": { "text": "|> " },
         "when": "editorTextFocus && editorLangId == r"
       },
       {
         "key": "Alt+-",
         "command": "type",
-        "args": { "text": " <- " },
+        "args": { "text": "<- " },
         "when": "editorTextFocus && editorLangId == r"
       },
       // keybindings for Rmarkdown
       {
         "key": "Ctrl+Shift+m",
         "command": "type",
-        "args": { "text": " %>% " },
+        "args": { "text": "|> " },
         "when": "editorTextFocus && editorLangId == rmd"
       },
       {
         "key": "Alt+-",
         "command": "type",
-        "args": { "text": " <- " },
+        "args": { "text": "<- " },
         "when": "editorTextFocus && editorLangId == rmd"
       },
       // keybindings for R terminal (radian included)
       {
         "key": "Ctrl+Shift+m",
         "command": "workbench.action.terminal.sendSequence",
-        "args": { "text": " %>% " },
+        "args": { "text": "%>%" },
         "when": "terminalFocus"
       },
       {
         "key": "Alt+-",
         "command": "workbench.action.terminal.sendSequence",
-        "args": { "text": " <- " },
+        "args": { "text": "<-" },
         "when": "terminalFocus"
       },
       {
@@ -50,7 +50,7 @@
         "when": "editorTextFocus && editorLangId == 'rmd'"
       },
       {
-        "key": "ctrl+shift+enter",
+        "key": "shift+enter",
         "command": "r.runSelection",
         "when": "editorTextFocus && editorLangId == 'r'"
       },
@@ -60,7 +60,7 @@
         "when": "editorTextFocus && editorLangId == 'r'"
       },
       {
-        "key": "ctrl+enter",
+        "key": "shift+enter",
         "command": "r.runSelection",
         "when": "editorTextFocus && editorLangId == 'rmd'"
       },
@@ -99,7 +99,7 @@
         "when": "editorTextFocus && !editorReadonly"
       },
       {
-        "key": "ctrl+alt+t",
+        "key": "alt+x",
         "command": "workbench.action.terminal.focus"
       },
       {
@@ -273,7 +273,45 @@
         "when": "editorTextFocus && github.copilot.activated"
       },
       {
-        "key": "ctrl+shift+f",
-        "command": "betterSearch.search"
+        "key": "alt",
+        "command": "github.copilot.generate",
+        "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
+      },
+      {
+        "key": "ctrl+enter",
+        "command": "-github.copilot.generate",
+        "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
+      },
+      {
+        "key": "ctrl+shift+oem_5",
+        "command": "-workbench.action.terminal.focusTabs",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+      },
+      {
+        "key": "ctrl+l",
+        "command": "-workbench.action.chat.clear",
+        "when": "hasChatProvider && inChat"
+      },
+      {
+        "key": "f1",
+        "command": "-workbench.action.showCommands"
+      },
+      {
+        "key": "f1",
+        "command": "r.helpPanel.openForSelection"
+      },
+      {
+        "key": "ctrl+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+l",
+        "command": "-notebook.centerActiveCell",
+        "when": "notebookEditorFocused"
+      },
+      {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.clear"
       }
 ]
