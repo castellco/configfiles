@@ -6,7 +6,7 @@
     "github.copilot.enable":  {
         "*": false,
         "plaintext": false,
-        "markdown": true,
+        "markdown": false,
         "scminput": false,
         "quarto": true,
         "yaml": false,
@@ -30,7 +30,7 @@
                                                        "strings":  "on"
                                                    }
                    },
-    "editor.fontSize":  19,
+    "editor.fontSize":  18,
     "terminal.integrated.cursorBlinking":  true,
     "todo-tree.general.enableFileWatcher":  true,
     "todo-tree.general.showActivityBarBadge":  true,
@@ -42,8 +42,7 @@
     "r.liveShare.defaults.shareBrowser":  true,
     "r.lsp.debug":  true,
     "editor.lineDecorationsWidth":  0,
-    "editor.glyphMargin":  false,
-    "window.commandCenter":  true,
+    "editor.glyphMargin": false,
     "problems.defaultViewMode":  "table",
     "editor.semanticHighlighting.enabled":  false,
     "workbench.colorCustomizations":  {
@@ -62,7 +61,7 @@
     "settingsSync.ignoredSettings":  [
 
                                      ],
-    "Notes.notesLocation":  "C:\\Users\\Carolina\\Documents\\castellco\\notes",
+    "Notes.notesLocation":  "C:\\Users\\gcorn\\Documents\\castellco\\notes",
     "editor.multiCursorModifier":  "ctrlCmd",
     "editor.largeFileOptimizations":  false,
     "git.enableSmartCommit":  true,
@@ -74,8 +73,7 @@
     "editor.mouseWheelZoom":  true,
     "git.openRepositoryInParentFolders":  "never",
     "terminal.integrated.shellIntegration.suggestEnabled":  true,
-    "r.bracketedPaste":  true,
-    "notebook.outline.showCodeCells":  true,
+    "r.bracketedPaste": true,
     "workbench.panel.defaultLocation":  "right",
     "r.workspaceViewer.removeHiddenItems":  true,
     "r.workspaceViewer.showObjectSize":  true,
@@ -83,8 +81,8 @@
     "scm.diffDecorationsGutterPattern":  {
                                              "modified":  false
                                          },
-    "foam.openDailyNote.directory":  "C:/Users/Carolina/Documents/castellco/notes/dailies",
-    "todo-tree.general.rootFolder":  "C:/Users/Carolina/Documents/castellco",
+    "foam.openDailyNote.directory":  "C:/Users/gcorn/Documents/castellco/notes/dailies",
+    "todo-tree.general.rootFolder":  "C:\\Users\\gcorn\\Documents\\castellco\\notes",
     "editor.tokenColorCustomizations":  {
                                             "textMateRules":  [
                                                                   "@{scope=text.html.markdown.journal.task.open.bullet; settings=}",
@@ -176,15 +174,14 @@
     "todo-tree.highlights.useColourScheme":  true,
     "files.autoSave":  "afterDelay",
     "breadcrumbs.enabled":  false,
-    "r.session.useWebServer":  true,
-    "window.menuBarVisibility":  "compact",
-    "r.helpPanel.cacheIndexFiles":  "Global",
+    "r.session.useWebServer": true,
+    "r.helpPanel.cacheIndexFiles":  "Workspace",
     "r.rmarkdown.knit.openOutputFile":  true,
     "r.plot.useHttpgd":  true,
     "gitlens.defaultDateFormat":  "Do MMM YYYY",
     "gitlens.defaultDateShortFormat":  "DD-MM-YY",
     "anki.md.updateCards":  true,
-    "r.rpath.windows":  "C:/Program Files/R/R-4.3.1/bin/x64/Rterm.exe",
+    "r.rpath.windows":  "C:/Program Files/R/R-4.3.2/bin/x64/Rterm.exe",
     "editor.bracketPairColorization.independentColorPoolPerBracketType":  true,
     "foam.completion.useAlias":  "whenPathDiffersFromTitle",
     "kanbn.showSprintButton":  true,
@@ -208,11 +205,8 @@
                                   "commandTimeout":  30,
                                   "applicationName":  "vscode-mssql"
                               }
-                          ],
-    "workbench.layoutControl.enabled":  false,
-    "workbench.layoutControl.type":  "toggles",
-    "window.title":  "${activeEditorMedium}",
-    "workbench.colorTheme":  "Prism",
+                        ],
+    "window.title": "${activeEditorMedium}",
     "html.autoClosingTags":  false,
     "html.autoCreateQuotes":  false,
     "todo-tree.general.automaticGitRefreshInterval":  60,
@@ -223,5 +217,21 @@
     "extensions.autoCheckUpdates":  false,
     "extensions.showRecommendationsOnlyOnDemand":  true,
     "git.autofetch":  false,
-    "npm.fetchOnlinePackageInfo": false
+    "npm.fetchOnlinePackageInfo": false,
+    "projectManager.git.baseFolders": [
+        "C:\\Users\\gcorn\\Documents\\castellco"
+    ],
+    "terminal.integrated.tabs.description": "${cwdFolder}",
+    "window.zoomLevel": -0.5,
+    "workbench.sideBar.location": "right",
+    "security.workspace.trust.enabled": false,
+    "outline.collapseItems": "alwaysCollapse",
+    "workbench.colorTheme": "Default Light+",
+    "window.commandCenter": false,
+    "window.density.editorTabHeight": "compact",
+    "window.menuBarVisibility": "toggle",
+    "workbench.activityBar.location": "hidden",
+    "editor.acceptSuggestionOnEnter": "off",
+    "r.useRenvLibPath": true,
+    "editor.inlineSuggest.showToolbar": "always"
 }

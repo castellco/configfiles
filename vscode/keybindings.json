@@ -50,7 +50,7 @@
         "when": "editorTextFocus && editorLangId == 'rmd'"
       },
       {
-        "key": "shift+enter",
+        "key": "ctrl+enter",
         "command": "r.runSelection",
         "when": "editorTextFocus && editorLangId == 'r'"
       },
@@ -60,7 +60,7 @@
         "when": "editorTextFocus && editorLangId == 'r'"
       },
       {
-        "key": "shift+enter",
+        "key": "ctrl+enter",
         "command": "r.runSelection",
         "when": "editorTextFocus && editorLangId == 'rmd'"
       },
@@ -313,5 +313,15 @@
       {
         "key": "ctrl+l",
         "command": "workbench.action.terminal.clear"
+      },
+      {
+        "key": "ctrl+alt+r",
+        "command": "r.runSource",
+        "when": "editorTextFocus && editorLangId == 'r'"
+      },
+      {
+        "key": "ctrl+shift+s",
+        "command": "-r.runSource",
+        "when": "editorTextFocus && editorLangId == 'r'"
       }
 ]
