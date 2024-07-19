@@ -1,0 +1,57 @@
+{
+    "editor.fontSize": 16,
+    "workbench.sideBar.location": "right",
+    "editor.minimap.enabled": false,
+    "files.autoSave": "afterDelay",
+    "editor.stickyScroll.enabled": false,
+    "r.rpath.windows": "C:/Program Files/R/R-4.4.0/bin/x64/R.exe",
+    "r.rterm.windows": "C:/Program Files/R/R-4.4.0/bin/x64/R.exe",
+    "r.lsp.diagnostics": false,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "r": true
+    },
+    "editor.wordWrap": "on",
+    "editor.glyphMargin": false,
+    "outline.showFields": false,
+    "r.plot.useHttpgd": true,
+    "python.defaultInterpreterPath": "C:\\Users\\gcorn\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "notebook.lineNumbers": "on",
+    "dataWrangler.experiments.autoDetectCsvDelimiter": true,
+    "jupyter.contextualHelp.detailLevel": "verbose",
+    "jupyter.executionAnalysis.enabled": true,
+    "jupyter.logKernelOutputSeparately": true,
+"todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX"
+    ],
+    "todo-tree.highlights.foregroundColourScheme": [
+        "white",
+        "black",
+        "black",
+        "white",
+        "white"
+    ],
+    "todo-tree.highlights.backgroundColourScheme": [
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "blue"
+    ],
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.autoIndent": "brackets",
+    "search.quickOpen.includeSymbols": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "window.zoomLevel": -0.5,
+    "workbench.colorTheme": "Solarized Light Chandrian",
+    "workbench.activityBar.location": "hidden",
+}
