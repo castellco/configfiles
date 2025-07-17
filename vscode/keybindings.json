@@ -30,13 +30,13 @@
       {
         "key": "Ctrl+Shift+m",
         "command": "workbench.action.terminal.sendSequence",
-        "args": { "text": "%>%" },
+        "args": { "text": "|> " },
         "when": "terminalFocus"
       },
       {
         "key": "Alt+-",
         "command": "workbench.action.terminal.sendSequence",
-        "args": { "text": "<-" },
+        "args": { "text": "<- " },
         "when": "terminalFocus"
       },
       {
@@ -105,11 +105,6 @@
       {
         "key": "ctrl+shift+insert",
         "command": "editor.emmet.action.expandAbbreviation",
-        "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
-      },
-      {
-        "key": "tab",
-        "command": "-editor.emmet.action.expandAbbreviation",
         "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
       },
       {
@@ -218,14 +213,6 @@
         "command": "r.runAllChunks"
       },
       {
-        "key": "alt+u",
-        "command": "codegeex.new-completions"
-      },
-      {
-        "key": "alt+n",
-        "command": "-codegeex.new-completions"
-      },
-      {
         "key": "ctrl+alt+i",
         "command": "quarto.insertCodeCell"
       },
@@ -251,11 +238,6 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus",
         "args": {"snippet": "options(\n  max.print=100,\n  vsc.use_httpgd=TRUE,\n  device='windows'\n)"}
-      },
-      {
-        "key": "ctrl+enter",
-        "command": "-codegeex.interactive-mode",
-        "when": "editorFocus && !editorReadonly"
       },
       {
         "key": "ctrl+shift+s",
