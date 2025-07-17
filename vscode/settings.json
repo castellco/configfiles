@@ -7,7 +7,7 @@
         }
     },
     "breadcrumbs.enabled": false,
-    "editor.acceptSuggestionOnEnter": "off",
+    "editor.acceptSuggestionOnEnter": "smart",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.fontSize": 18,
     "editor.formatOnType": true,
@@ -20,9 +20,10 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderWhitespace": "none",
     "editor.semanticHighlighting.enabled": false,
-    "editor.suggest.insertMode": "replace",
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
     "editor.tabCompletion": "on",
     "editor.wordWrap": "on",
+    "emmet.showSuggestionsAsSnippets": true,
     "emmet.useInlineCompletions": true,
     "extensions.autoCheckUpdates": false,
     "files.associations": {
@@ -40,11 +41,11 @@
     "outline.collapseItems": "alwaysCollapse",
     "problems.defaultViewMode": "table",
     "python.condaPath": "C:\\Users\\gcorn\\anaconda3\\Scripts\\conda-script.py",
-    "python.defaultInterpreterPath": "C:\\Users\\gcorn\\anaconda3\\python.exe",
+    "python.defaultInterpreterPath": "C:\\Users\\gcorn\\anaconda3\\envs\\r_env",
     "python.experiments.optInto": [
         "pythonTerminalEnvVarActivation"
     ],
-    "python.pythonPath": "C:\\Users\\gcorn\\anaconda3\\python.exe",
+    "python.pythonPath": "C:\\Users\\gcorn\\anaconda3\\envs\\r_env\\python.exe",
     "python.terminal.activateEnvInCurrentTerminal": true,
     "python.terminal.activateEnvironment": true,
     "r.bracketedPaste": true,
@@ -65,6 +66,8 @@
     },
     "security.workspace.trust.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
+    "telemetry.editStats.enabled": false,
+    "telemetry.feedback.enabled": false,
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.tabs.description": "${cwdFolder}",
@@ -74,11 +77,9 @@
     "window.menuBarVisibility": "toggle",
     "window.title": "${activeEditorMedium}",
     "window.zoomLevel": -0.5,
-    "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "doge-dark-theme",
     "workbench.editor.pinnedTabSizing": "shrink",
     "workbench.enableExperiments": false,
     "workbench.panel.defaultLocation": "right",
-    "workbench.sideBar.location": "right",
-    "telemetry.editStats.enabled": false,
-    "telemetry.feedback.enabled": false
+    "workbench.sideBar.location": "right"
 }
