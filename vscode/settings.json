@@ -1,237 +1,84 @@
 {
-    "editor.inlineSuggest.enabled":  true,
-    "editor.minimap.enabled":  false,
-    "telemetry.telemetryLevel":  "off",
-    "editor.wordWrap":  "on",
-    "github.copilot.enable":  {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false,
-        "quarto": true,
-        "yaml": false,
-        "rmd": true,
-        "r": true,
-        "python": false
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "other": "on",
+            "strings": "on"
+        }
     },
-    "files.associations":  {
-                               "*.rmd":  "rmd"
-                           },
-    "r.editor.formatOnType":  false,
-    "r.editor.formatScope":  false,
-    "editor.formatOnType":  true,
-    "editor.tabCompletion":  "on",
-    "r.session.levelOfObjectDetail":  "Detailed",
-    "security.workspace.trust.untrustedFiles":  "open",
-    "[markdown]":  {
-                       "editor.quickSuggestions":  {
-                                                       "other":  "on",
-                                                       "comments":  "on",
-                                                       "strings":  "on"
-                                                   }
-                   },
-    "editor.fontSize":  18,
-    "terminal.integrated.cursorBlinking":  true,
-    "todo-tree.general.enableFileWatcher":  true,
-    "todo-tree.general.showActivityBarBadge":  true,
-    "todo-tree.general.statusBar":  "tags",
-    "todo-tree.general.showIconsInsteadOfTagsInStatusBar":  true,
-    "todo-tree.tree.expanded":  true,
-    "todo-tree.tree.showCountsInTree":  true,
-    "editor.renderWhitespace":  "none",
-    "r.liveShare.defaults.shareBrowser":  true,
-    "r.lsp.debug":  true,
-    "editor.lineDecorationsWidth":  0,
+    "breadcrumbs.enabled": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.fontSize": 18,
+    "editor.formatOnType": true,
     "editor.glyphMargin": false,
-    "problems.defaultViewMode":  "table",
-    "editor.semanticHighlighting.enabled":  false,
-    "workbench.colorCustomizations":  {
-                                          "editorError.foreground":  "#ff000035",
-                                          "editorWarning.foreground":  "#ffff007a",
-                                          "editorInfo.foreground":  "#0033ff4b"
-                                      },
-    "external.commands":  [
-                              {
-                                  "name":  "Rterminal",
-                                  "command":  "C:\\Program Files\\R\\R-4.2.2\\bin\\x64\\R.exe",
-                                  "cwd":  "$ProjectFileDir$"
-                              }
-                          ],
-    "vsicons.dontShowNewVersionMessage":  true,
-    "settingsSync.ignoredSettings":  [
-
-                                     ],
-    "Notes.notesLocation":  "C:\\Users\\gcorn\\Documents\\castellco\\notes",
-    "editor.multiCursorModifier":  "ctrlCmd",
-    "editor.largeFileOptimizations":  false,
-    "git.enableSmartCommit":  true,
-    "git.confirmSync":  false,
-    "r.plot.defaults.fullWindowMode":  true,
-    "terminal.integrated.tabs.title":  "${cwFolder}",
-    "emmet.useInlineCompletions":  true,
-    "editor.suggest.insertMode":  "replace",
-    "editor.mouseWheelZoom":  true,
-    "git.openRepositoryInParentFolders":  "never",
-    "terminal.integrated.shellIntegration.suggestEnabled":  true,
-    "r.bracketedPaste": true,
-    "workbench.panel.defaultLocation":  "right",
-    "r.workspaceViewer.removeHiddenItems":  true,
-    "r.workspaceViewer.showObjectSize":  true,
-    "scm.alwaysShowRepositories":  true,
-    "scm.diffDecorationsGutterPattern":  {
-                                             "modified":  false
-                                         },
-    "foam.openDailyNote.directory":  "C:/Users/gcorn/Documents/castellco/notes/dailies",
-    "todo-tree.general.rootFolder":  "C:\\Users\\gcorn\\Documents\\castellco\\notes",
-    "editor.tokenColorCustomizations":  {
-                                            "textMateRules":  [
-                                                                  "@{scope=text.html.markdown.journal.task.open.bullet; settings=}",
-                                                                  "@{scope=text.html.markdown.journal.task.open.marker; settings=}",
-                                                                  "@{scope=text.html.markdown.journal.task.open.keyword; settings=}",
-                                                                  "@{scope=text.html.markdown.journal.task.open.text; settings=}",
-                                                                  "@{scope=text.html.markdown.journal.task.completed.keyword; settings=}",
-                                                                  "@{scope=text.html.markdown.journal.task.completed.marker; settings=}",
-                                                                  "@{scope=text.html.markdown.journal.task.completed.text; settings=}",
-                                                                  "@{scope=text.html.markdown.journal.task.completed.bullet; settings=}",
-                                                                  "@{scope=text.html.markdown.journal.memo.keyword; settings=}",
-                                                                  "@{scope=text.html.markdown.journal.memo.bullet; settings=}",
-                                                                  "@{scope=text.html.markdown.journal.scope; settings=}",
-                                                                  "@{scope=text.html.markdown.journal.link.keyword; settings=}",
-                                                                  "@{scope=text.html.markdown.journal.link.bullet; settings=}"
-                                                              ]
-                                        },
-    "todo-tree.highlights.backgroundColourScheme":  [
-                                                        "red",
-                                                        "orange",
-                                                        "yellow",
-                                                        "green",
-                                                        "blue",
-                                                        "indigo"
-                                                    ],
-    "todo-tree.highlights.customHighlight":  {
-                                                 "NOTE":  {
-                                                              "background":  "#8F7E4F",
-                                                              "iconColour":  "#8F7E4F",
-                                                              "icon":  "paperclip"
-                                                          },
-                                                 "TODO":  {
-                                                              "background":  "green",
-                                                              "iconColour":  "green",
-                                                              "icon":  "calendar"
-                                                          },
-                                                 "DOING":  {
-                                                               "background":  "black",
-                                                               "iconColour":  "black",
-                                                               "icon":  "tools"
-                                                           },
-                                                 "FIXME":  {
-                                                               "background":  "#D64045",
-                                                               "iconColour":  "#D64045",
-                                                               "icon":  "alert-fill"
-                                                           },
-                                                 "- [ ]":  {
-                                                               "background":  "green",
-                                                               "iconColour":  "green",
-                                                               "icon":  "calendar"
-                                                           },
-                                                 "BUY":  {
-                                                             "background":  "grey",
-                                                             "iconColour":  "grey",
-                                                             "icon":  "home"
-                                                         },
-                                                 "COURSE":  {
-                                                                "background":  "#157EFB",
-                                                                "iconColour":  "#157EFB",
-                                                                "icon":  "mortar-board"
-                                                            },
-                                                 "IDEA":  {
-                                                              "background":  "#F6AE2D",
-                                                              "iconColour":  "#F6AE2D",
-                                                              "icon":  "light-bulb"
-                                                          }
-                                             },
-    "todo-tree.tree.hideTreeWhenEmpty":  true,
-    "todo-tree.highlights.foregroundColourScheme":  [
-                                                        "white",
-                                                        "white",
-                                                        "white",
-                                                        "white",
-                                                        "white",
-                                                        "white",
-                                                        "white",
-                                                        "white"
-                                                    ],
-    "todo-tree.general.tags":  [
-                                   "NOTE",
-                                   "TODO",
-                                   "DOING",
-                                   "FIXME",
-                                   "- [ ]",
-                                   "BUY",
-                                   "COURSE",
-                                   "IDEA"
-                               ],
-    "todo-tree.highlights.useColourScheme":  true,
-    "files.autoSave":  "afterDelay",
-    "breadcrumbs.enabled":  false,
-    "r.session.useWebServer": true,
-    "r.helpPanel.cacheIndexFiles":  "Workspace",
-    "r.rmarkdown.knit.openOutputFile":  true,
-    "r.plot.useHttpgd":  true,
-    "gitlens.defaultDateFormat":  "Do MMM YYYY",
-    "gitlens.defaultDateShortFormat":  "DD-MM-YY",
-    "anki.md.updateCards":  true,
-    "r.rpath.windows":  "C:/Program Files/R/R-4.3.2/bin/x64/Rterm.exe",
-    "editor.bracketPairColorization.independentColorPoolPerBracketType":  true,
-    "foam.completion.useAlias":  "whenPathDiffersFromTitle",
-    "kanbn.showSprintButton":  true,
-    "todo-tree.tree.groupedByTag":  true,
-    "todo-tree.tree.buttons.scanMode":  true,
-    "workbench.preferredDarkColorTheme":  "Dark Orange",
-    "workbench.preferredLightColorTheme":  "Black on Light Gray",
-    "git.repositoryScanMaxDepth":  -1,
-    "todo-tree.tree.scanMode":  "workspace only",
-    "workbench.editor.pinnedTabSizing":  "shrink",
-    "mssql.connections":  [
-                              {
-                                  "server":  "DESKTOP-0BQNK5M\\SQLEXPRESS",
-                                  "database":  "",
-                                  "authenticationType":  "Integrated",
-                                  "encrypt":  "Mandatory",
-                                  "trustServerCertificate":  true,
-                                  "user":  "",
-                                  "password":  "",
-                                  "connectTimeout":  15,
-                                  "commandTimeout":  30,
-                                  "applicationName":  "vscode-mssql"
-                              }
-                        ],
-    "window.title": "${activeEditorMedium}",
-    "html.autoClosingTags":  false,
-    "html.autoCreateQuotes":  false,
-    "todo-tree.general.automaticGitRefreshInterval":  60,
-    "todo-tree.general.periodicRefreshInterval":  2,
-    "telemetry.enableTelemetry":  false,
-    "telemetry.enableCrashReporter":  false,
-    "workbench.enableExperiments": false,
-    "extensions.autoCheckUpdates":  false,
-    "extensions.showRecommendationsOnlyOnDemand":  true,
-    "git.autofetch":  false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.inlineSuggest.showToolbar": "always",
+    "editor.largeFileOptimizations": false,
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderWhitespace": "none",
+    "editor.semanticHighlighting.enabled": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.tabCompletion": "on",
+    "editor.wordWrap": "on",
+    "emmet.useInlineCompletions": true,
+    "extensions.autoCheckUpdates": false,
+    "files.associations": {
+        "*.rmd": "rmd"
+    },
+    "files.autoSave": "afterDelay",
+    "git.autofetch": false,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.openRepositoryInParentFolders": "never",
+    "git.repositoryScanMaxDepth": -1,
+    "html.autoClosingTags": false,
+    "html.autoCreateQuotes": false,
     "npm.fetchOnlinePackageInfo": false,
-    "projectManager.git.baseFolders": [
-        "C:\\Users\\gcorn\\Documents\\castellco"
-    ],
-    "terminal.integrated.tabs.description": "${cwdFolder}",
-    "window.zoomLevel": -0.5,
-    "workbench.sideBar.location": "right",
-    "security.workspace.trust.enabled": false,
     "outline.collapseItems": "alwaysCollapse",
-    "workbench.colorTheme": "Default Light+",
+    "problems.defaultViewMode": "table",
+    "python.condaPath": "C:\\Users\\gcorn\\anaconda3\\Scripts\\conda-script.py",
+    "python.defaultInterpreterPath": "C:\\Users\\gcorn\\anaconda3\\python.exe",
+    "python.experiments.optInto": [
+        "pythonTerminalEnvVarActivation"
+    ],
+    "python.pythonPath": "C:\\Users\\gcorn\\anaconda3\\python.exe",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.terminal.activateEnvironment": true,
+    "r.bracketedPaste": true,
+    "r.helpPanel.cacheIndexFiles": "Workspace",
+    "r.liveShare.defaults.shareBrowser": true,
+    "r.lsp.debug": true,
+    "r.plot.defaults.fullWindowMode": true,
+    "r.plot.useHttpgd": true,
+    "r.rmarkdown.knit.openOutputFile": true,
+    "r.session.levelOfObjectDetail": "Detailed",
+    "r.session.useWebServer": true,
+    "r.useRenvLibPath": true,
+    "r.workspaceViewer.removeHiddenItems": true,
+    "r.workspaceViewer.showObjectSize": true,
+    "scm.alwaysShowRepositories": true,
+    "scm.diffDecorationsGutterPattern": {
+        "modified": false
+    },
+    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.tabs.description": "${cwdFolder}",
+    "terminal.integrated.tabs.title": "${cwFolder}",
     "window.commandCenter": false,
     "window.density.editorTabHeight": "compact",
     "window.menuBarVisibility": "toggle",
-    "workbench.activityBar.location": "hidden",
-    "editor.acceptSuggestionOnEnter": "off",
-    "r.useRenvLibPath": true,
-    "editor.inlineSuggest.showToolbar": "always"
+    "window.title": "${activeEditorMedium}",
+    "window.zoomLevel": -0.5,
+    "workbench.colorTheme": "Default Light+",
+    "workbench.editor.pinnedTabSizing": "shrink",
+    "workbench.enableExperiments": false,
+    "workbench.panel.defaultLocation": "right",
+    "workbench.sideBar.location": "right",
+    "telemetry.editStats.enabled": false,
+    "telemetry.feedback.enabled": false
 }
