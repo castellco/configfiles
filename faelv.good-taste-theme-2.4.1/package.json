@@ -1,0 +1,110 @@
+{
+	"name": "good-taste-theme",
+	"displayName": "Good Taste Theme",
+	"description": "A light theme for those with a good taste",
+	"version": "2.4.1",
+	"publisher": "faelv",
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#f1f2f0",
+		"theme": "light"
+	},
+	"qna": "https://github.com/faelv/good-taste-theme/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/faelv/good-taste-theme.git"
+	},
+	"bugs": {
+		"url": "https://github.com/faelv/good-taste-theme/issues"
+	},
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"light",
+		"theme",
+		"php",
+		"javascript",
+		"go",
+		"html",
+		"react",
+		"python"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Good Taste",
+				"uiTheme": "vs",
+				"path": "./themes/GoodTaste.color-theme.json"
+			}
+		],
+		"grammars": [
+			{
+				"scopeName": "comment.markdown.injection",
+				"path": "./syntaxes/MarkdownCode.tmLanguage.json",
+				"injectTo": [
+					"source.ts",
+					"source.tsx",
+					"source.js",
+					"source.jsx",
+					"source.php",
+					"text.html.php"
+				],
+				"embeddedLanguages": {
+					"comment.markdown.code.block": "text.html.markdown"
+				},
+				"tokenTypes": {
+					"comment.markdown.code.block": "comment"
+				}
+			},
+			{
+				"scopeName": "sql.injection",
+				"path": "./syntaxes/SQLNamedParams.tmLanguage.json",
+				"injectTo": [
+					"source.sql",
+					"source.php",
+					"text.html.php"
+				],
+				"tokenTypes": {
+					"sql.named-parameter": "other"
+				}
+			},
+			{
+				"scopeName": "php.curlysyntax.injection",
+				"path": "./syntaxes/PHPCurlySyntax.tmLanguage.json",
+				"injectTo": [
+					"source.php",
+					"text.html.php"
+				],
+				"tokenTypes": {
+					"variable.other.curlysyntax.php": "other"
+				}
+			},
+			{
+				"scopeName": "php.attribute.injection",
+				"path": "./syntaxes/PHPAttribute.tmLanguage.json",
+				"injectTo": [
+					"source.php",
+					"text.html.php"
+				]
+			}
+		]
+	},
+	"__metadata": {
+		"id": "36d04ceb-4d6e-46d2-9186-dc06c07249c9",
+		"publisherId": "5e1aa1a5-52f4-4f3b-9141-4ad836ba46ae",
+		"publisherDisplayName": "faelv",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1719677247309,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 41569
+	}
+}
