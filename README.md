@@ -1,3 +1,33 @@
+
+
+Color Format CoPQ Actual vs Target = 
+VAR _selectedMetric = SELECTEDVALUE('_MetricsTargets'[Metric ordered])
+VAR _month = SELECTEDVALUE('Date'[Year Month])
+VAR _target = 
+    CALCULATE(
+        SUM('_MetricsTargets'[Value]),
+        '_MetricsTargets'[Target or actual] = "Target",
+        '_MetricsTargets'[Function] = "CPX",
+        'Date'[Year Month] = _month
+    )
+VAR _actual = 
+    CALCULATE(
+        SUM('_MetricsTargets'[Value]),
+        '_MetricsTargets'[Target or actual] = "Actual",
+        '_MetricsTargets'[Function] = "CPX",
+        'Date'[Year Month] = _month
+    )
+
+RETURN
+    IF(
+        _selectedMetric = "2. CPX (CSO) CoPQ (m€) - Actual",
+        IF(_actual <= _target, 1, -1),
+        BLANK()
+    )
+
+
+
+
 # configfiles
 
 RConsole descargarlo en Home: "C:\Users\Carolina\"
