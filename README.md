@@ -1,31 +1,33 @@
+CoPQ Actual Color = 
+VAR CurrentMetric = SELECTEDVALUE('_MetricsTargets'[Metric ordered])
+VAR CurrentMonth = SELECTEDVALUE('Date'[Year Month])
 
-
-Color Format CoPQ Actual vs Target = 
-VAR _selectedMetric = SELECTEDVALUE('_MetricsTargets'[Metric ordered])
-VAR _month = SELECTEDVALUE('Date'[Year Month])
-VAR _target = 
-    CALCULATE(
-        SUM('_MetricsTargets'[Value]),
-        '_MetricsTargets'[Target or actual] = "Target",
-        '_MetricsTargets'[Function] = "CPX",
-        'Date'[Year Month] = _month
-    )
-VAR _actual = 
-    CALCULATE(
-        SUM('_MetricsTargets'[Value]),
-        '_MetricsTargets'[Target or actual] = "Actual",
-        '_MetricsTargets'[Function] = "CPX",
-        'Date'[Year Month] = _month
-    )
-
-RETURN
-    IF(
-        _selectedMetric = "2. CPX (CSO) CoPQ (m€) - Actual",
-        IF(_actual <= _target, 1, -1),
-        BLANK()
-    )
-
-
+// Solo aplicamos color a la fila de Actual
+IF(CurrentMetric <> "2. CPX (CSO) CoPQ (m€) - Actual", 
+    BLANK(),
+    
+    // Obtenemos el valor Target para este mes
+    VAR TargetValue = 
+        CALCULATE(
+            [CoPQ Target],
+            FILTER(
+                ALL('_MetricsTargets'),
+                '_MetricsTargets'[Metric ordered] = "1. CPX (CSO) CoPQ (m€) - Target" &&
+                '_MetricsTargets'[Month] = EOMONTH(MAX('Date'[Date]), 0)
+            )
+        )
+    
+    // Obtenemos el valor Actual para este mes
+    VAR ActualValue = [Cumulative Sum of Total CoPQ in m EUR for CPX]
+    
+    // Aplicamos la lógica de colores
+    RETURN
+        IF(ISBLANK(ActualValue), BLANK(),
+            IF(TargetValue >= ActualValue, 1,  // Verde
+                0                               // Rojo
+            )
+        )
+)
 
 
 # configfiles
