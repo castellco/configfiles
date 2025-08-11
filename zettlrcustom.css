@@ -69,3 +69,51 @@ body #editor .CodeMirror .cm-hr {
     font-family: 'Inconsolata', Consolas, Menlo, monospace;
     font-weight: bold;
 }
+
+
+Color CoPQ Matrix =
+VAR SelectedMonth = SELECTEDVALUE('CoPQtargets'[Month])
+VAR SelectedMetric = SELECTEDVALUE('CoPQtargets'[Metric ordered])
+
+VAR _green = "#00c04d"
+VAR _red = "#FF5252"
+
+-- Valor Actual en el contexto actual
+VAR ActualValue =
+    CALCULATE(
+        SUM('CoPQtargets'[Value]),
+        'CoPQtargets'[Metric ordered] = SelectedMetric,
+        'CoPQtargets'[Month] = SelectedMonth
+    )
+
+-- Determinar métrica objetivo
+VAR TargetMetric =
+    SWITCH(
+        SelectedMetric,
+        "2. CoPQ (m€) - Actual", "1. CoPQ (m€) - Target",
+        "10. CoPQ (m€) - Actual", "9. CoPQ (m€) - Target",
+        BLANK()
+    )
+
+-- Valor Target en el mismo contexto de región, función, etc.
+VAR TargetValue =
+    IF(
+        NOT ISBLANK(TargetMetric) && NOT ISBLANK(SelectedMonth),
+        CALCULATE(
+            SUM('CoPQtargets'[Value]),
+            'CoPQtargets'[Metric ordered] = TargetMetric,
+            'CoPQtargets'[Month] = SelectedMonth
+        )
+    )
+
+RETURN
+    SWITCH(
+        TRUE(),
+        SelectedMetric = "3. RCA Ongoing" && NOT ISBLANK(ActualValue),
+            IF(ActualValue < 2.00, _green, _red),
+
+        NOT ISBLANK(TargetValue) && NOT ISBLANK(ActualValue),
+            IF(ActualValue <= TargetValue, _green, _red),
+
+        BLANK()
+    )
